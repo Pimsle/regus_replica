@@ -16,4 +16,5 @@ Il risultato del mio lavoro dovrebbe essere sufficientemente aderente al modello
 ![mep_test_preview](https://github.com/Pimsle/regus_replica/blob/main/mep_test_preview.gif?raw=true "met - test - preview")
 ___
 Grazie
+
 A presto
