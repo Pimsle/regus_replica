@@ -12,6 +12,8 @@ Ho applicato delle funzionalità interattive soltanto al pulsante "telefono", in
 
 Il risultato del mio lavoro dovrebbe essere sufficientemente aderente al modello dato (lascio giudicare a voi), nelle 2 risoluzioni richieste (1920x1080 e 260x800, senza fattore di zoom).
 
+### Preview
+![pet_test_preview](mep_test_preview.png "met - test - preview")
 ___
 Grazie
 A presto

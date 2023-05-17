@@ -99,38 +99,26 @@ export default function Home() {
                 <div className="ml-4">
                   <ul className="flex items-stretch">
                     <li className="">
-<<<<<<< HEAD
                       <button 
                         className="border border-solid border-gray-200 rounded py-1 px-3 mr-6 font-medium"
                         onMouseOver={() => blurEffectIn()}
                         onMouseLeave={() => blurEffectOut()}>
-=======
-                      <button className="border border-solid border-gray-200 rounded py-1 px-3 mr-6 font-medium">
->>>>>>> fee99f4779d5ba45b7aaec30bf5a2f7b56c1b1b2
                         Che cosa facciamo
                       </button>
                     </li>
                     <li>
-<<<<<<< HEAD
                       <button 
                         className="border border-solid border-gray-200 rounded py-1 px-3 mr-6 font-medium"
                         onMouseOver={() => blurEffectIn()}
                         onMouseLeave={() => blurEffectOut()}>
-=======
-                      <button className="border border-solid border-gray-200 rounded py-1 px-3 mr-6 font-medium">
->>>>>>> fee99f4779d5ba45b7aaec30bf5a2f7b56c1b1b2
                         Inizia
                       </button>
                     </li>
                     <li>
-<<<<<<< HEAD
                       <button 
                         className="border border-solid border-gray-200 rounded py-1 px-3 mr-6 font-medium"
                         onMouseOver={() => blurEffectIn()}
                         onMouseLeave={() => blurEffectOut()}>
-=======
-                      <button className="border border-solid border-gray-200 rounded py-1 px-3 mr-6 font-medium">
->>>>>>> fee99f4779d5ba45b7aaec30bf5a2f7b56c1b1b2
                         Scopri Regus
                       </button>
                     </li>
