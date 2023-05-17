@@ -1,0 +1,252 @@
+$primaryColor: rgb(229, 37, 0);
+
+
+.width_adjustment {
+  @media screen and (min-width: 1600px) {
+    width: calc(100% - 88px);
+  }
+}
+
+.covid19_banner {
+  background-color: #393939;
+  z-index: 997;
+  p {
+    //font-size: 18px;
+    font-weight: 400;
+    line-height: 1.78;
+  }
+  .arrow_icon {
+    display: inline-block;
+    width: 10px;
+  }
+}
+
+.mainnav {
+  z-index: 990;
+  button {
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: rgb(0, 131, 133);
+      color: white;
+    }
+  }
+}
+
+.toolbox {
+  width: 400px;
+  button {
+    width: 40px;
+    height: 40px;
+    &.anim {
+      transition: background-color 0.3s ease;
+      &:hover {
+        background-color: rgb(0, 131, 133);
+        svg {
+          color: white;
+        }
+      }
+    }
+    svg {
+      width: 16px;
+      height: auto;
+    }
+  }
+  .phone_box {
+    position: absolute;
+    right: -10px;
+    top: calc( 100% + 24px );
+    width: 60vw;
+    max-width: 630px;
+    box-shadow: 0px 0px 32px rgb(57 57 57 / 25%);
+
+    opacity: 0;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    transform: translateY(15%);
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 80px;
+      top: 0;
+      right: 0;
+      transform: translateY(-100%);
+    }
+    &::after {
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid white;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translateY(-100%);
+      right: 20px;
+    }
+
+    .call_cta {
+      width: 100%;
+      height: auto;
+      background-color: $primaryColor;
+    }
+    .input_wrapper {
+      .flag {
+        background-image: url(https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_32/Sitecore/CD/~/icon/Flags/32x32/flag_italy.png);
+        background-size: 150%;
+        background-position: center center;
+        width: 26px;
+        height: 26px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .input {
+        max-width: 140px;
+      }
+      &:focus {
+        border-color: #008385;
+      }
+    }
+  }
+}
+
+.mobile_nav_menu_toggle_icon {
+  vertical-align: middle;
+}
+.mobile_nav_icon {
+  width: 12px;
+  height: auto;
+}
+
+.header_grey_sep {
+  width: 1px;
+  height: 100%;
+  min-height: 40px;
+  background-color: #EBEBEB;
+}
+
+.mobile_logo {
+  max-height: 32px;
+  width: auto;
+}
+
+#main {
+  transition: filter 0.5s ease;
+}
+
+.slideshow {
+  min-height: 424px;
+  margin-bottom: 200px;
+  position: relative;
+  .slide {
+    min-height: 424px;
+    margin-bottom: 200px;
+    position: relative;
+  
+    .slide_image {
+      width: 100%;
+      height: 100%;
+      min-height: 424px;
+      position: relative;
+      &.slide_1 {
+        background-image: url('https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_1312,h_424,g_auto:subject,ar_164:53/Sitecore/CD/-/media/regus/redesign/homepage/hero/searchv2heroofficespace.ashx?h=848&w=2624&hash=B54B3CEE6CB804EA26005C7CB8025B88');
+        background-size: cover;
+        background-position: 33% center;
+        @media screen and (min-width: 768px) {
+          background-position: center center;
+        }
+      }
+    }
+    
+    .slide_caption {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      margin-top: 120px;
+    }
+  }
+
+  .slider_extended_controls_upper {
+    position: absolute;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    @media screen and (min-width: 768px) {
+      bottom: 0;
+      width: 100%;
+      min-width: 776px;
+      max-width: 800px;
+    }
+    ul {
+      li {
+        .slider_controls_icon {
+          width: auto;
+          height: 24px;
+        }
+        &.active{
+          border-bottom-color: $primaryColor;
+        }
+      }
+    }
+  }
+
+  .slider_extended_controls_lower {
+    background-color: rgb(244, 243, 240);
+    position: absolute;
+    bottom: 28px;;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    width: 90%;
+    @media screen and (min-width: 768px) {
+      bottom: 0;
+      width: 100%;
+      min-width: 776px;
+      max-width: 800px;
+    }
+    .input_wrapper {
+      width: 100%;
+      border-color: rgb(217, 219, 221);
+      @media screen and (min-width: 768px) {
+        width: calc( 100% - 220px - 1rem );
+      }
+      .input {
+        width: 30%;
+      }
+      .input_info {
+        color: $primaryColor;
+      }
+    }
+    .search_cta {
+      width: 220px;
+      background-color: $primaryColor;
+      svg {
+        height: 16px;
+        width: auto;
+        color: whtie;
+      }
+    }
+  }
+
+}
+
+.red_dot {
+  font-family: Georgia,Times,Times New Roman,serif;
+  line-height: 0.1;
+  font-size: 1.4em;
+  color: $primaryColor;
+}
+
+.card {
+  border-color: #eef0f2;
+  h3.box_title {
+    color: $primaryColor;
+    span.primary_underline {
+      border-bottom: 1px solid $primaryColor;
+    }
+  }
+  p {
+    color: #888888;
+  }
+}
